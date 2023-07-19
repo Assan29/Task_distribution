@@ -56,20 +56,12 @@ class Probdistributions:
         return result
 
 
-# In[2]:
-
 
 obj = Probdistributions()
 
 
-# In[3]:
-
-
 # bernoulli distribution
 obj.bernoulli(0.4,0)
-
-
-# In[4]:
 
 
 # binomial distribution
@@ -77,20 +69,12 @@ n = 10
 p = 0.5
 x = range(n+1)
 y = [obj.binomial(n,p,i) for i in range(n + 1)]
-print(y)
-
-
-# In[6]:
 
 
 # geometric distribution
 p = 0.5
 x = range(1, 11)
 y = [obj.geometric(p, i) for i in x]
-print(y)
-
-
-# In[7]:
 
 
 # hypergeometric distribution
@@ -99,31 +83,18 @@ K = 20
 n = 10
 x = range(n+1)
 y = [obj.hypergeometric(N, K, n, i) for i in x]
-print(y)
-
-
-# In[8]:
 
 
 # poisson distribution
 lmbda = 4
 x = range(20)
 y = [obj.poisson(lmbda, i) for i in x]
-print(y)
-
-
-# In[9]:
 
 
 # exponential distribution
 lmbda = 0.5
 x = [i / 10 for i in range(100)]
 y = [obj.exponential(lmbda, i) for i in x]
-print(y)
-
-
-# In[ ]:
-
 
 
 
