@@ -1,17 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
-
 
 import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-
-
-# In[6]:
-
 
 def distribution():
     
@@ -77,9 +71,6 @@ def distribution():
     
     
 distribution()
-
-
-# In[ ]:
 
 
 
